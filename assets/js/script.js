@@ -145,9 +145,6 @@ $(".list-group").on("click", "span", function() {
   dateInput.trigger("focus");
 });
 
-// load tasks for the first time
-loadTasks();
-
 // value of due date was changed
 $(".list-group").on("blur", "input[type='text']", function() {
   // get current text
@@ -179,3 +176,5 @@ $(".list-group").on("blur", "input[type='text']", function() {
   $(this).replaceWith(taskSpan);
 });
 
+// load tasks for the first time
+loadTasks();
